@@ -10,10 +10,32 @@
 
             <?php
 
-            $sql = "SELECT * FROM users WHERE id=101";
-            $result = $database->query($sql);
-            $user_found = mysqli_fetch_array($result);
-            echo $user_found['username'];
+
+            //
+            // $result_set = User::find_all_users();
+            //
+            // while ($row = mysqli_fetch_array($result_set)) {
+            //
+            //   echo $row['username'] . "<br>";
+            //
+            // }
+
+            // $found_user = User::find_user_by_id('101');
+            // $user = User::instantiation($found_user);
+            //
+            // echo $user->password;
+            //$user_found = mysqli_fetch_array($result);
+
+            // $users = User::find_all_users();
+            // foreach ($users as $user) {
+            //   echo "User: " . $user->username . "<br>";
+            // }
+            //
+            // var_dump($users);
+
+            $found_user = User::find_user_by_id(101);
+
+            echo $found_user->username;
 
              ?>
             <ol class="breadcrumb">
