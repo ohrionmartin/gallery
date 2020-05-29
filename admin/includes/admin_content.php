@@ -10,34 +10,24 @@
 
             <?php
 
+              // $user = new User();
+              // $user->username = "Example_username";
+              // $user->password = "Example_password";
+              // $user->first_name = "John";
+              // $user->last_name = "Doe";
+              //
+              // $user->create();
 
-            //
-            // $result_set = User::find_all_users();
-            //
-            // while ($row = mysqli_fetch_array($result_set)) {
-            //
-            //   echo $row['username'] . "<br>";
-            //
-            // }
-
-            // $found_user = User::find_user_by_id('101');
-            // $user = User::instantiation($found_user);
-            //
-            // echo $user->password;
-            //$user_found = mysqli_fetch_array($result);
-
-            // $users = User::find_all_users();
-            // foreach ($users as $user) {
-            //   echo "User: " . $user->username . "<br>";
-            // }
-            //
-            // var_dump($users);
-
-            $found_user = User::find_user_by_id(101);
-
-            echo $found_user->username;
+              // $user = User::find_user_by_id(105);
+              //
+              // $user->last_name = "WILLIAMS";
+              //
+              // $user->update();
+              $user = User::find_user_by_id(105);
+              $user->delete();
 
              ?>
+
             <ol class="breadcrumb">
                 <li>
                     <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
