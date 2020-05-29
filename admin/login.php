@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
   $user_found = User::verify_user($username, $password);
 
   if ($user_found) {
-    $session->login($$user_found);
+    $session->login($user_found);
     redirect("index.php");
 
   } else {
