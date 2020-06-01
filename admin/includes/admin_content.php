@@ -18,13 +18,24 @@
               //
               // $user->create();
 
-              // $user = User::find_user_by_id(105);
-              //
-              // $user->last_name = "WILLIAMS";
-              //
-              // $user->update();
-              $user = User::find_user_by_id(105);
-              $user->delete();
+              $user = User::find_user_by_id(107);
+
+              $user->last_name = "WILLIAMS";
+
+              $user->update();
+              // $user = User::find_user_by_id(106);
+              // $user->delete();
+
+              // $user = User::find_user_by_id(106);
+              // $user->password = "WhateverPass";
+              // $user->first_name = "WhateverFirst";
+              // $user->save();
+
+              // $user = new User;
+              // $user->username = "Whatevervtwo";
+              // $user->password = "WhateverPass";
+              // $user->first_name = "WhateverFirst";
+              // $user->save();
 
              ?>
 
