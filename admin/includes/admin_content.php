@@ -18,16 +18,16 @@
               //
               // $user->create();
 
-              // $user = User::find_user_by_id(107);
+              // $user = User::find_by_id(107);
               //
-              // $user->username = "Whatevervtwo";
-              // $user->password = "WhateverPass";
+              // $user->username = "WhateverSSSvtwo";
+              // $user->password = "WhateverSSSPass";
               // $user->first_name = "WhateverFirst";
-              // $user->last_name = "WILLIAMSnnn";
+              // $user->last_name = "WILLIASSSMSnnn";
               //
               // $user->update();
 
-              // $user = User::find_user_by_id(106);
+              // $user = User::find_by_id(139);
               // $user->delete();
 
               // $user = User::find_user_by_id(106);
@@ -40,6 +40,27 @@
               // $user->password = "WhateverPass";
               // $user->first_name = "WhateverFirst";
               // $user->save();
+
+              // $users = User::find_all();
+              // foreach ($users as $user) {
+              //     echo $user->username;
+              // }
+
+              // $photos = Photo::find_all();
+              // foreach ($photos as $photo) {
+              //     echo $photo->id . "<br>";
+              // }
+
+              // $photo = new Photo();
+              // $photo->title = "Student101";
+              // $photo->description = "Stu@101";
+              // $photo->filename = "Stu Jane";
+              // $photo->type = "Stu Doe";
+              // $photo->create();
+
+              // $photo = Photo::find_by_id(139);
+              // $photo->delete();
+
 
              ?>
 
