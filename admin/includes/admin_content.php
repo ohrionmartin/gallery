@@ -10,13 +10,13 @@
 
             <?php
 
-              $user = new User();
-              $user->username = "Student101";
-              $user->password = "Stu@101";
-              $user->first_name = "Stu Jane";
-              $user->last_name = "Stu Doe";
-
-              $user->create();
+              // $user = new User();
+              // $user->username = "Student101";
+              // $user->password = "Stu@101";
+              // $user->first_name = "Stu Jane";
+              // $user->last_name = "Stu Doe";
+              //
+              // $user->create();
 
               // $user = User::find_user_by_id(107);
               //
