@@ -10,6 +10,11 @@
 
             <?php
 
+            // $photo = Photo::find_by_id(84);
+            // echo $photo->filename;
+
+              // $user= User::find_by_id(104);
+              // echo $user->username;
               // $user = new User();
               // $user->username = "Student101";
               // $user->password = "Stu@101";
