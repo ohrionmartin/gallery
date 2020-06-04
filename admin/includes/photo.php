@@ -30,7 +30,7 @@ class Photo extends Db_object {
 
   public function set_file($file) {
 
-    if (empty($file) || !$file || !is_arry($file)) {
+    if (empty($file) || !$file || !is_array($file)) {
       $this->errors[] = "There was no file uploaded here";
       return false;
 
@@ -48,6 +48,12 @@ class Photo extends Db_object {
 
     }
 
+  }
+
+  public function picture_path() {
+
+    return $this->upload_directory.DS.$this->filename;
+    
   }
 
   public function save() {
@@ -87,7 +93,7 @@ class Photo extends Db_object {
 
   }
 
-  
+
 
 }
 
