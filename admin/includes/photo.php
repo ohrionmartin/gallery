@@ -59,6 +59,7 @@ class Photo extends Db_object {
   }
 
   public function save() {
+    
     if ($this->id) {
       $this->update();
 

@@ -26,11 +26,6 @@ if (empty($_GET['id'])) {
   }
 
 }
-
-
-
-
-
 // $photos = Photo::find_all();
 
 ?>
