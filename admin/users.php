@@ -53,7 +53,7 @@ $users = User::find_all();
                               <td><img class="admin-user-thumbnail user_image" src="<?php echo $user->image_path_placeholder(); ?>"></td>
 
                               <td><?php echo $user->username; ?>
-                                <div class="actions_link">
+                                <div class="actions_links">
 
                                   <a href="delete_user.php?id=<?php echo $user->id; ?>">Delete</a>
                                   <a href="edit_user.php?id=<?php echo $user->id; ?>">Edit</a>

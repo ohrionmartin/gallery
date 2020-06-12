@@ -109,7 +109,7 @@ class Db_object {
 
     }
 
-    protected function clean_preperties() {
+    protected function clean_properties() {
 
       global $database;
 
