@@ -38,8 +38,6 @@ $comments = Comment::find_the_comments($_GET['id']);
                           <small>Subheading</small>
                       </h1>
 
-                      <a href="add_comment.php" class="btn btn-primary">Add comment</a>
-
                       <div class="col-md-12">
 
                         <table class="table table-hover">
