@@ -3,3 +3,10 @@
   width: 200px;
   height: 150px !important;
 }
+
+/********** Home Page Pagination **************/
+
+.pager .active a {
+  background-color: #000;
+  color: #fff;
+}

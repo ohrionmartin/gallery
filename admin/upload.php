@@ -47,7 +47,7 @@
                   <div class="col-lg-12">
                       <h1 class="page-header">
                           Uploads
-                          <small>Subheading</small>
+                        
                       </h1>
 
                       <div class="col-md-6">
