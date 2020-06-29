@@ -1,4 +1,5 @@
 <?php include("includes/header.php"); ?>
+<?php include("includes/photo_library_modal.php"); ?>
 <?php if (!$session->is_signed_in()) { redirect("login.php"); } ?>
 
 <?php
@@ -44,6 +45,8 @@ $user = User::find_by_id($_GET['id']);
 
 ?>
 
+
+
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,7 +74,7 @@ $user = User::find_by_id($_GET['id']);
                       </h1>
 
                       <div class="col-md-6">
-                        <img class="img-responsive" src="<?php echo $user->image_path_placeholder(); ?>" alt="">
+                        <a href="#"data-toggle="modal" data-target="#photo-library"><img class="img-responsive" src="<?php echo $user->image_path_placeholder(); ?>" alt=""></a>
                       </div>
 
                       <form action="" method="post" enctype="multipart/form-data">
@@ -103,7 +106,7 @@ $user = User::find_by_id($_GET['id']);
                         </div>
 
                         <div class="form-group">
-                          <a class="btn btn-danger" href="delete_user.php?id=<?php echo $user->id; ?>">Delete</a>
+                          <a id="user-id" class="btn btn-danger" href="delete_user.php?id=<?php echo $user->id; ?>">Delete</a>
 
                           <input type="submit" name="update" class="btn btn-primary pull-right" value="Update">
                         </div>
