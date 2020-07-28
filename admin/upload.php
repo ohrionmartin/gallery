@@ -1,82 +1,139 @@
 <?php include("includes/header.php"); ?>
 
-<?php if (!$session->is_signed_in()) { redirect("login.php"); } ?>
+<?php if(!$session->is_signed_in()) {redirect("login.php");} ?>
 
-<?php
 
-    $message = "";
-    if (isset($_POST['submit'])) {
+<?php 
 
-        $photo = new Photo();
-        $photo->title = $_POST['title'];
-        $photo->set_file($_FILES['file_upload']);
+$message = "";
+if(isset($_FILES['file'])) { 
 
-        if ($photo->save()) {
+$photo = new Photo();
+$photo->title = $_POST['title'];
+$photo->set_file($_FILES['file']);
 
-            $message = "Photo uploaded Successfully";
+if($photo->save()) {
 
-        } else {
+$message = "Photo {$photo->filename} uploaded sucessfully"; 
 
-          $message = join("<br>", $photo->errors);
 
-        }
+} else {
+
+$message = join("<br>", $photo->errors);
+
 
 }
 
-?>
+
+
+
+}
+
+
+
+
+
+
+ ?>
+
+
+
+
+
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
 
-            <?php include("includes/top_nav.php"); ?>
+
+
+        <?php include("includes/top_nav.php") ?>
+
+
+
+
 
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+           
 
-            <?php include("includes/side_nav.php"); ?>
+    
+        <?php include("includes/side_nav.php"); ?>
+
+
+
 
             <!-- /.navbar-collapse -->
         </nav>
 
+
+
+
         <div id="page-wrapper">
 
-          <div class="container-fluid">
 
-              <!-- Page Heading -->
-              <div class="row">
-                  <div class="col-lg-12">
-                      <h1 class="page-header">
-                          Uploads
-                        
-                      </h1>
+            <div class="container-fluid">
 
-                      <div class="col-md-6">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            UPLOAD
+                            <small></small>
+                        </h1>
+
+                        <div class="row">
+                        <div class="col-md-6">
+
                         <?php echo $message; ?>
-                      <form action="upload.php" method="post" enctype="multipart/form-data">
-                        <div class="form-group">
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            
+                            <div class="form-group">
 
-                          <input type="text" name="title" class="form-control">
+                                <input type="text" name="title" class="form-control">
+                                
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="file" name="file" >
+                                
+                            </div>
+
+                            <input type="submit" name="submit" >
+
+                        </form>
 
                         </div>
 
-                        <div class="form-group">
+                    </div><!--End of Row-->
 
-                          <input type="file" name="file_upload">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+
+                            <form action="upload.php" class="dropzone"></form>
+                            
+
+
 
                         </div>
+                        
 
-                        <input type="submit" name="submit">
 
-                      </form>
-                      </div>
+                    </div>
 
-                  </div>
-              </div>
-              <!-- /.row -->
 
-          </div>
-          <!-- /.container-fluid -->
 
+
+
+
+                        
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
 
         </div>
         <!-- /#page-wrapper -->

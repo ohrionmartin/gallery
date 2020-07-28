@@ -1,12 +1,14 @@
-<div class="container-fluid">
 
-    <!-- Page Heading -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                Admin
-                <small>Dashboard</small>
-            </h1>
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                           Admin
+                            <small>Dashboard</small>
+                        </h1>
+
 
             <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -24,8 +26,9 @@
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                  <span class="pull-left">View Details</span>
-                               <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+            
+                                  <span class="pull-left">View Details</span> 
+                               <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span> 
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
@@ -90,7 +93,9 @@
                                         <i class="fa fa-support fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge"><?php echo Comment::count_all(); ?></div>
+                                        <div class="huge"><?php echo Comment::count_all(); ?>
+
+                                        </div>
                                         <div>Comments</div>
                                     </div>
                                 </div>
@@ -106,17 +111,45 @@
                     </div>
 
 
-              </div> <!--First Row-->
+            </div> <!--First Row-->
 
-              <div class="row">
 
-                <div id="piechart" style="width: 900px; height: 500px;"></div>
+            <div class="row">
 
-              </div>
 
-        </div>
-    </div>
-    <!-- /.row -->
+                 <div id="piechart" style="width: 900px; height: 500px;"></div>
+                
 
-</div>
-<!-- /.container-fluid -->
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+                
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
