@@ -1,2 +1,2 @@
 # gallery
-A gallery CMS
+A gallery CMS for car collection curation
